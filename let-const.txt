@@ -1,0 +1,14 @@
+let and const Exercise
+In this exercise, you’ll refactor some ES5 code into ES2015.
+
+ES5 Global Constants
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+ES2015 Global Constants
+Const PI = 3.14;
+PI= 42; // there will be an error.
+Quiz
+What is the difference between var and let? You can redeclare var but you can not with let.
+What is the difference between var and const? You can reassign/redeclare var but not with const.
+What is the difference between let and const? You can reassign with let, but not with const.
+What is hoisting? The order in which code is structured in the codebase. Hoisted functions trigger before they are defined in the codebase.
