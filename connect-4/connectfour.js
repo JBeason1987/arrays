@@ -61,6 +61,7 @@ function findSpotForCol(x) {
   // TODO: write the real version of this, rather than always returning 0
   for (let y = HEIGHT - 1; y >= 0; y --){
     if (!board[y][x]) {
+      board[y][x] = currPlayer;
       return y;
     }
   }
@@ -102,7 +103,6 @@ function handleClick(evt) {
 
   // place piece in board and add to HTML table
   // TODO: add line to update in-memory board
-  board[x][y] = currPlayer;
   placeInTable(y, x);
 
   // check for win
